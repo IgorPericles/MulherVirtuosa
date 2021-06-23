@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Mulher Virtuosa</title>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <div class="container">
+    <img class="profile" src="./assets/profile.png" />
+
+    <h2>Mulher Virtuosa</h2>
+    <p class="subtitle">Studio de Beleza & Estética</p>
+    <p>Acompanhe meu trabalho</p>
+
+    <div class="info-container">
+      <div class="social-media-container">
+        <a href="https://www.instagram.com/studiomvirtuosa/">
+          <i data-feather="instagram"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=5582988332769&text=Vim%20pelo%20Instagram"><img class="whatsapp"
+            src="./assets/whatsapp.png"></a>
+
+      </div>
+
+      <div class="content">
+        <div id="secondary-content" class="secondary-content">
+          <h3> <i id="go-back-button" data-feather="arrow-left"></i> Serviços</h3>
+          <a class="link"
+            href="https://api.whatsapp.com/send?phone=5582988332769&text=Quero%20saber%20sobre%20-%20*EST%C3%89TICA%20FACIAL%20E%20CORPORAL*">
+            ESTÉTICA FACIAL E CORPORAL
+          </a>
+          <a class="link"
+            href="https://api.whatsapp.com/send?phone=5582988332769&text=Quero%20saber%20sobre%20-%20*CABELOS%20E%20UNHAS*">
+            CABELOS E UNHAS
+          </a>
+          <a class="link"
+            href="https://api.whatsapp.com/send?phone=5582988332769&text=Quero%20saber%20sobre%20-%20*MICROPIGMENTA%C3%87%C3%83O%20LABIAL%20-%20EXTENS%C3%83O%20DE%20C%C3%8DLIOS*">
+            MICROPIGMENTAÇÃO LABIAL E EXTENSÃO DE CÍLIOS
+          </a>
+          <a class="link"
+            href="https://api.whatsapp.com/send?phone=5582988332769&text=Quero%20saber%20sobre%20-%20*DESIGNER%20DE%20SOBRANCELHAS*">
+            DESIGNER DE SOBRANCELHA
+          </a>
+          <a class="link"
+            href="https://api.whatsapp.com/send?phone=5582988332769&text=Quero%20saber%20sobre%20-%20*DEPILA%C3%87%C3%83O%20CORPORAL*">
+            DEPILAÇÃO CORPORAL
+          </a>
+          <a class="link"
+            href="https://api.whatsapp.com/send?phone=5582988332769&text=Quero%20saber%20sobre%20-%20*UNHAS%20DE%20GEL*">
+            UNHAS DE GEL
+          </a>
+          <a class="link"
+            href="https://api.whatsapp.com/send?phone=5582988332769&text=Quero%20saber%20sobre%20-%20*SPA%20DOS%20P%C3%89S*">
+            SPA DOS PÉS
+          </a>
+        </div>
+        <div class="main-content">
+          <p>Nossos Serviços 👇🏼</p>
+          <div class="video-container">
+            <img src="./assets/em breve.png" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <a href="" class="link highlight">
+            ⭐️ Cursos - EM BREVE
+          </a>
+          <a id="setup-button" class="link">
+            Serviços
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+  feather.replace();
+</script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("particles-js", {
+    particles: {
+      number: {
+        value: 1200,
+        density: { enable: true, value_area: 789.1476416322727 }
+      },
+      color: {
+        value: "#ffffff"
+      },
+      shape: {
+        type: "circle",
+        stroke: { width: 0, color: "#000000" },
+        polygon: { nb_sides: 5 },
+        image: { src: "img/github.svg", width: 100, height: 100 }
+      },
+      opacity: {
+        value: 0.48927153781200905,
+        random: false,
+        anim: { enable: true, speed: 0.2, opacity_min: 0, sync: false }
+      },
+      size: {
+        value: 2,
+        random: true,
+        anim: { enable: true, speed: 2, size_min: 0, sync: false }
+      },
+      line_linked: {
+        enable: false,
+        distance: 150,
+        color: "#ffffff",
+        opacity: 0.4,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 1,
+        direction: "none",
+        random: true,
+        straight: false,
+        out_mode: "out",
+        bounce: false,
+        attract: { enable: false, rotateX: 600, rotateY: 1200 }
+      }
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: {
+          enable: true,
+          mode: "bubble"
+        },
+        onclick: { enable: true, mode: "push" },
+        resize: true
+      },
+      modes: {
+        grab: { distance: 400, line_linked: { opacity: 1 } },
+        bubble: {
+          distance: 83.91608391608392,
+          size: 1,
+          duration: 3,
+          opacity: 1,
+          speed: 3
+        },
+        repulse: { distance: 200, duration: 0.4 },
+        push: { particles_nb: 4 },
+        remove: {
+          particles_nb: 2
+        }
+      }
+    },
+    retina_detect: true
+  });
+</script>
+<script>
+  const setupButton = document.getElementById("setup-button");
+  const goBackButton = document.getElementById("go-back-button");
+
+  setupButton.addEventListener("click", showContent);
+  goBackButton.addEventListener("click", hideContent);
+
+  function showContent() {
+    document.getElementById("secondary-content").classList.remove("hide");
+    document.getElementById("secondary-content").classList.add("show");
+  }
+
+  function hideContent() {
+    document.getElementById("secondary-content").classList.remove("show");
+    document.getElementById("secondary-content").classList.add("hide");
+  }
+
+</script>
+
+</html>
